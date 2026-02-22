@@ -153,7 +153,7 @@ h4,
     position: relative;
 }
 
-.navbar nav a:not(.btn-primary)::after {
+.navbar nav a:not(.btn-primary):not(.btn-secondary)::after {
     content: '';
     position: absolute;
     width: 0;
@@ -779,6 +779,61 @@ footer {
     padding: 2rem 5%;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Delivery Partners */
+.btn-delivery {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn-zomato {
+    background-color: #E23744;
+    color: white;
+    box-shadow: 0 4px 15px rgba(226, 55, 68, 0.3);
+}
+
+.btn-zomato:hover {
+    background-color: #cb202d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(226, 55, 68, 0.4);
+}
+
+.btn-swiggy {
+    background-color: #FC8019;
+    color: white;
+    box-shadow: 0 4px 15px rgba(252, 128, 25, 0.3);
+}
+
+.btn-swiggy:hover {
+    background-color: #e56b05;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(252, 128, 25, 0.4);
+}
+
+/* Footer Socials */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    color: var(--text-muted);
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: var(--gold);
+    transform: translateY(-3px);
 }
 
 footer p {
